@@ -89,7 +89,7 @@ const Translator = () => {
   <div className="translator-wrapper">
     <div className="translator-container">
       <div className="translator-card">
-        <h2 className="title">🌌 Space Translator</h2>
+        <h2 className="title">🌌 Multilingual Translator</h2>
 
         <textarea
           className="text-input"

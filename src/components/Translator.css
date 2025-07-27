@@ -1,21 +1,31 @@
-/* Background */
+/* Base styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', Roboto, Oxygen, sans-serif;
   background: linear-gradient(135deg, #0d1321, #1b1f3a);
   color: #ffffff;
+  min-height: 100vh;
 }
 
-/* Container */
+/* Wrapper ensures full height coverage */
+.translator-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: inherit;
+}
+
+/* Main card area centered */
 .translator-container {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
-/* Card */
+/* Card styling */
 .translator-card {
   background: rgba(25, 29, 56, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -38,10 +48,10 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* Text Input */
+/* Textarea */
 .text-input {
   width: 100%;
-  padding: 1.2rem;
+  padding: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 14px;
   resize: none;
@@ -63,7 +73,7 @@ body {
   color: #a0a9cc;
 }
 
-/* Controls (dropdown + button) */
+/* Controls */
 .controls {
   display: flex;
   flex-direction: column;
@@ -114,7 +124,7 @@ body {
   box-shadow: 0 6px 20px rgba(74, 90, 255, 0.6);
 }
 
-/* Output Box */
+/* Result Output */
 .result-box {
   background: rgba(20, 30, 60, 0.9);
   padding: 1.2rem;
@@ -125,21 +135,14 @@ body {
   line-height: 1.6;
   transition: all 0.3s ease-in-out;
 }
-.translator-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  justify-content: center;
-  padding: 1rem;
-  box-sizing: border-box;
-}
 
+/* Footer */
 .footer-credit {
-  margin-top: 1.5rem;
   text-align: center;
+  padding: 1rem 0;
   font-size: 0.95rem;
   color: #9ba9cc;
   font-style: italic;
   opacity: 0.8;
+  background: transparent;
 }

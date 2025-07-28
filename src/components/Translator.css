@@ -49,7 +49,11 @@ html, body {
 
 /* Title */
 .title {
-  text-align: center;
+  font-family: cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   margin-bottom: 1.5rem;
   font-size: 2rem;
   color: #c8d3ff;
@@ -80,6 +84,23 @@ html, body {
 .text-input::placeholder {
   color: #a0a9cc;
 }
+
+.rotating-icon {
+  animation: spin 6s linear infinite;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 /* Dropdown + Button Row */
 .controls {

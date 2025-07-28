@@ -93,10 +93,10 @@ const Translator = () => {
     <div className="translator-wrapper">
       <div className="translator-container">
         <div className="translator-card">
-          <h2 className="title">
-            <HiOutlineGlobeAlt style={{ marginRight: '8px' }} />
+          <h4 className="title">
+            <HiOutlineGlobeAlt className="rotating-icon"/>
             Multilingual Translator
-          </h2>
+          </h4>
 
 
           <textarea

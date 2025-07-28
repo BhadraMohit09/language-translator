@@ -41,7 +41,7 @@ html, body {
   -webkit-backdrop-filter: blur(16px);
   padding: 2rem;
   border-radius: 20px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 40px rgba(134, 20, 240, 0.4);
   width: 100%;
   max-width: 650px;
   transition: all 0.3s ease-in-out;
@@ -115,22 +115,42 @@ html, body {
 
 /* Button */
 .translate-btn {
-  background: linear-gradient(145deg, #4a5aff, #2f39d2);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
+  background-color: #4f46e5; /* Indigo */
+  color: #ffffff;
   border: none;
-  border-radius: 14px;
-  font-weight: 600;
-  font-size: 1rem;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(74, 90, 255, 0.4);
-  transition: all 0.3s ease;
+
+  /* Modern shadow */
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+
+  /* Transition for smooth interaction */
+  transition: all 0.25s ease-in-out;
 }
 
 .translate-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(74, 90, 255, 0.6);
+  background-color: #4338ca; /* Slightly darker indigo */
+  box-shadow: 0 10px 24px rgba(67, 56, 202, 0.4);
+  transform: translateY(-2px);
 }
+
+.translate-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 6px 16px rgba(67, 56, 202, 0.3);
+}
+
+.translate-btn svg {
+  font-size: 18px;
+}
+
+
 
 /* Output */
 .result-box {
